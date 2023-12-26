@@ -73,13 +73,13 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 BOARD_USES_QCOM_HARDWARE := true
 
 # HIDL
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/vintf/vendor_framework_compatibility_matrix.xml \
     $(DEVICE_PATH)/configs/vintf/xiaomi_framework_compatibility_matrix.xml \
     $(DEVICE_PATH)/configs/vintf/device_framework_matrix.xml
 
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 
 $(foreach sku, CN GL JP, \
     $(eval ODM_MANIFEST_SKUS += $(sku)) \
