@@ -14,6 +14,9 @@ $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
+# Inherit from the MiuiCamera setup
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-garnet/device.mk)
+
 # Inherit common Voltage OS  Stuff.
 TARGET_BOOT_ANIMATION_RES = 1080
 USE_PIXEL_CHARGER := true
