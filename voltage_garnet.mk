@@ -23,6 +23,8 @@ $(call inherit-product-if-exists, device/xiaomi/miuicamera-garnet/device.mk)
 # Inherit common Voltage OS  Stuff.
 TARGET_BOOT_ANIMATION_RES = 1080
 USE_PIXEL_CHARGER := true
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_HAS_UDFPS := true
 
 PRODUCT_NAME := voltage_garnet
 PRODUCT_DEVICE := garnet
