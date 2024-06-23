@@ -66,6 +66,11 @@ TARGET_OTA_ASSERT_DEVICE := garnet
 # Display
 TARGET_SCREEN_DENSITY := 540
 
+# Dolby Vision
+SOONG_CONFIG_NAMESPACES += dolby_vision
+SOONG_CONFIG_dolby_vision += enabled
+SOONG_CONFIG_dolby_vision_enabled := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
