@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/flare_garnet.mk
+    $(LOCAL_DIR)/orion_garnet.mk
